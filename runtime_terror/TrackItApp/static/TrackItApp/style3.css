@@ -1,0 +1,22 @@
+Avatar>img{
+    padding: 10px;
+    border-radius: 50%;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* height:300px; */
+    margin:50px;
+}
+.three{
+    color:red;
+    font-weight:bolder;
+    font-size: 20px;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    padding-top:60px;
+}

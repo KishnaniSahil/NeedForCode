@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'TrackItApp/style2.css' %}">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <nav class="fixed-top">
+        <div class="navbar navbar-expand-md " style="background: #800080;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #800080,#ffc0cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+          <a href="" class="mx-3"
+            ><i class="fa fa-child text-white fa-3x"></i
+          ></a>
+          <button
+            class="navbar-toggler bg-light"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-between navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-3 ">
+            <li  data-bs-toggle="dropdown" class="dropdown" >
+                <a class="nav-link text-light text-uppercase fw-bold dropdown-toggle" href=""
+                  >Profile</a
+                >
+                <div class="dropdown-menu">
+                    <form  class="dropdown-item" action="{% url 'home' %}" method="POST">
+                        {% csrf_token %}
+                        <!-- <button id="myBtn" type="submit" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-log-out">log out</span>
+                        </button> -->
+                        <!-- <input type="submit" value="log out"> -->
+                        <input type="submit" class="btn btn-light" value="log out">
+                    </form>
+                </div>
+
+              </li>
+          </ul>
+         </div>
+
+         </div>
+         <div class="outer">
+            <div class="first">
+            <h1 class="faculty">F<span class="A">A</span>CULTY</h1>
+            <div class="fifth">
+                <form action="{% url 'top' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="second">
+                        <Label>Class :</Label>
+                    <input type="text" name="standard">
+                    </div>
+                    <div class="third">
+                        <label>Name:</label>
+                        <input type="text" name="sname">
+                    </div>
+                    <div class="fourth">
+                        <label>Roll-No:</label>
+                        <input type="text" name="roll_no">
+                    </div>
+                    <button type="submit" class="btn btn-dark" style="background: #800080;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #800080,#ffc0cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">submit
+                    </button>
+                    <!-- <a href="second.html" target='_blank'class="btn btn-dark" style="background: #800080;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #800080,#ffc0cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">Submit</a> -->
+                </form>
+            </div>
+         </div>
+         <div>
+            <img src="{% static 'TrackItApp\loginsvg.svg' %}" alt="not found" height='200px' width='250px'/>
+        </div>
+
+         </div>
+         
+          </nav>>
+          <script>
+            document.getElementById("myBtn").addEventListener("click",redirect)
+            function redirect(){
+                document.getElementById().innerHTML='localhost:8000/login/report';
+            }
+          </script>
+</body>
+</html>

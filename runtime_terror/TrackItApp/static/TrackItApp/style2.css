@@ -1,0 +1,34 @@
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    background-color: white;
+    border-radius: 15px;
+}
+.second{
+    padding: 10px;
+}
+.third{
+    padding: 10px;
+}
+.fourth{
+    padding: 10px;
+}
+.fifth{
+    padding: 10px;
+}
+.outer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:100px 200px;
+    padding:0 100px;
+}
+.faculty{
+    font-size: xx-large;
+    font-style: italic;
+}
+.A{
+    color: #800080;;
+}

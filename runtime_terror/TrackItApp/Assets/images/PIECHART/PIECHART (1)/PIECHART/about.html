@@ -1,0 +1,268 @@
+ <!doctype html>
+<html> 
+<head>
+	<link rel="stylesheet" href="style5.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+ 
+ 
+<title> About</title> 
+<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+
+ <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ 
+   <style>
+    
+     
+ 
+.b-skills
+{
+	border-top: 1px solid #f9f9f9;
+	padding-top: 46px;
+	text-align: center;
+}
+
+.b-skills:last-child { margin-bottom: -30px; }
+
+.b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+
+.skill-item
+{
+	position: relative;
+	max-width: 250px;
+	width: 100%;
+	margin-bottom: 30px;
+	color: #555;
+}
+
+.chart-container
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	margin-bottom: 27px;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent
+{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}
+       
+       p{
+           font-weight: 900;
+       }
+ 
+    
+    </style>
+ 
+  
+  
+ 
+</head>
+
+<body>
+	<nav class="fixed-top">
+        <div class="navbar navbar-expand-md " style="background: #800080;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #800080,#ffc0cb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */">
+          <a href="" class="mx-3"
+            ><i class="fa fa-child text-white fa-3x"></i
+          ></a>
+          <button
+            class="navbar-toggler bg-light"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="justify-content-between navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-3 ">
+            <li  data-bs-toggle="dropdown" class="dropdown" >
+                <a class="nav-link text-light text-uppercase fw-bold dropdown-toggle" href=""
+                  >Profile</a
+                >
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item"><button type="button" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-log-out"></span> Log out
+                  </button></a>
+                </div>
+              </li>
+          </ul>
+         </div>
+         </div>
+         <div class="Avatar">
+            <img src="new/profile.png" alt="error">
+         </div>
+         <div>
+            <h1>Name</h1>
+         </div>
+		</nav>
+  
+<br><br><br><br>
+	 
+		<section id="s-team" class="section">
+			 
+			<br><br><br>
+
+			<div class="b-skills">
+				<div class="container">
+					<h2>Total Parameters</h2>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="69" data-bar-color="#23afe3">
+										<span class="percent" data-after="%">100</span>
+									</div>
+								</div>
+
+								<p>Marks</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="78" data-bar-color="#a7d212">
+										<span class="percent" data-after="%">78</span>
+									</div>
+								</div>
+
+								<p>Extra Curriculum</p>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="skill-item center-block">
+								<div class="chart-container">
+									<div class="chart " data-percent="88" data-bar-color="#ff4241">
+										<span class="percent" data-after="%">95</span>
+									</div>
+								</div>
+
+								<p>Attendance</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+        <br><br><br><br><br>
+    
+ 
+ 
+  <br><br><br><br>  
+  
+  
+  
+ <script src="plugins/jquery-2.2.4.min.js"></script>
+ <script src="plugins/jquery.appear.min.js"></script>
+ <script src="plugins/jquery.easypiechart.min.js"></script> 
+ <script>
+    'use strict';
+
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+		 
+	}
+};
+ 
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 21,
+				trackWidth: 21,
+				size: 250,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 150);
+	});
+};
+ 
+
+$(document).ready(function() {
+  
+	run(_chart);
+  
+    
+});
+
+
+    
+    </script>
+ 
+   
+</body>
+ 
+</html>
